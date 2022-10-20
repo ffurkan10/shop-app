@@ -1,0 +1,29 @@
+//
+.navbar {
+  background-color: #c7b198;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 10px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    &__cart {
+      display: flex;
+      button {
+        font-size: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        &:active {
+          color: white;
+        }
+      }
+    }
+  }
+}
