@@ -1,0 +1,89 @@
+.shopList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.shop {
+  border: 1px solid black;
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+  &__card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+
+    &__img {
+      img {
+        width: 130px;
+        height: 130px;
+      }
+    }
+    &__title {
+      min-height: 80px;
+      margin-top: 15px;
+      span:nth-child(2) {
+        color: grey;
+      }
+    }
+    &__price {
+      margin-block: 10px;
+      span {
+        font-size: 20px;
+      }
+    }
+
+    &__text {
+      display: flex;
+      margin-top: 20px;
+      align-items: center;
+      margin-bottom: 10px;
+
+      span:nth-child(2) {
+        margin-left: 10px;
+        color: grey;
+      }
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 280px;
+      button {
+        margin-right: 20px;
+        background-color: #a8957f;
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        &:hover {
+          background-color: #dfd3c3;
+          transition: all 0.3s ease-in-out;
+        }
+        &:active {
+          background-color: #f0ece2;
+        }
+      }
+    }
+  }
+}
+
+.green {
+  font-size: 20px;
+  color: green;
+  border-radius: 5px;
+}
+.yellow {
+  font-size: 20px;
+  color: rgb(255, 170, 0);
+  border-radius: 5px;
+}
+.red {
+  font-size: 20px;
+  color: red;
+  border-radius: 5px;
+}
