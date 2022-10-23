@@ -16,11 +16,10 @@ const Cart = ({ cart, handleClick, handleRemove, handleDelete }) => {
       {cart.map((item) => (
         <div className="cart__box" key={item.id}>
           <div className="cart__box__img">
-            <img src={item.image} alt="" />
-            <strong>
-              {" "}
-              <p>{item.title}</p>
-            </strong>
+            <img src={item.image} alt="" />{" "}
+            <p>
+              <strong>{item.title}</strong>
+            </p>
           </div>
           <div className="cart__box__function">
             <button

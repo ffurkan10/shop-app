@@ -1,4 +1,5 @@
 .cart {
+  margin-inline: 10px;
   &__header {
     margin-top: 20px;
     display: flex;
@@ -24,7 +25,7 @@
     &__img {
       display: flex;
       align-items: center;
-      width: 900px;
+      width: 700px;
       img {
         width: 100px;
         margin-right: 20px;
@@ -37,7 +38,7 @@
       &__remove {
         width: 50px;
         font-size: 20px;
-        margin-inline: 5px;
+        margin-inline: 10px;
         cursor: pointer;
         background-color: #a8957f;
         border: 1px solid black;
@@ -57,6 +58,129 @@
     justify-content: flex-end;
     &__price {
       margin-left: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .cart {
+    &__box {
+      &__img {
+        width: 500px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .cart {
+    &__box {
+      &__img {
+        img {
+          width: 70px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+      &__function {
+        &__add,
+        &__remove {
+          width: 30px;
+          font-size: 16px;
+        }
+      }
+      &__price {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .cart {
+    &__box {
+      flex-direction: column;
+      align-items: center;
+      &__img {
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 80px;
+        }
+        p {
+          font-size: 18px;
+          width: 500px;
+        }
+      }
+      &__function {
+        margin-bottom: 20px;
+        &__add,
+        &__remove {
+          width: 60px;
+          font-size: 20px;
+        }
+      }
+      &__price {
+        width: 150px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cart {
+    &__box {
+      &__img {
+        margin-bottom: 10px;
+        img {
+          width: 70px;
+        }
+        p {
+          font-size: 17px;
+          width: 350px;
+        }
+      }
+      &__function {
+        margin-bottom: 20px;
+        &__add,
+        &__remove {
+          width: 60px;
+          font-size: 20px;
+        }
+      }
+      &__price {
+        width: 150px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .cart {
+    &__box {
+      &__img {
+        margin-bottom: 20px;
+        padding: 5px;
+        width: 300px;
+        img {
+          width: 70px;
+        }
+        p {
+          font-size: 17px;
+          width: 200px;
+        }
+      }
+      &__function {
+        margin-bottom: 20px;
+        &__add,
+        &__remove {
+          width: 60px;
+          font-size: 20px;
+        }
+      }
+      &__price {
+        width: 150px;
+        font-size: 18px;
+      }
     }
   }
 }

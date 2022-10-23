@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
+  align-items: center;
+  justify-content: center;
 }
 .shop {
   border: 1px solid black;
@@ -86,4 +88,35 @@
   font-size: 20px;
   color: red;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 640px) {
+  .shop {
+    width: 500px;
+    &__card {
+      &__btn {
+        width: 460px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .shop {
+    width: 400px;
+    &__card {
+      &__btn {
+        width: 350px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .shop {
+    width: 300px;
+    &__card {
+      &__btn {
+        width: 280px;
+      }
+    }
+  }
 }
